@@ -11,7 +11,9 @@ Originally run in Jupyter Notebook
 
 ---
 ---
-## Below are the installs and imports needed for the word cloud script and textuploader widget
+
+
+### The installs and imports needed for the word cloud script and textuploader widget
 
 ```
 !pip install wordcloud
@@ -29,7 +31,8 @@ import io
 import sys
 ```
 
-## Below is code for the the uploader widget
+
+### The code for the the uploader widget
 
 ```
 def _upload():
@@ -52,7 +55,12 @@ _upload()
 The text used for the word cloud displayed below is the **Vassals of the Lode-Star by Gardner F. Fox**
 The text was found through **The Project Gutenberg**
 
-## Below is a function that iterates through the uploaded file, removes punctuation, and counts the frequency of each word. The function will ignore any word that does not contain only letters, as well as overly utilized words like "and" or "the"
+
+
+
+
+
+### A function that iterates through the uploaded file, removes punctuation, and counts the frequency of each word. The function will ignore any word that does not contain only letters, as well as overly utilized words like "and" or "the"
 
 ```
 def calculate_frequencies(file_contents):
@@ -105,5 +113,5 @@ plt.show()
 ```
 ---
 ---
-# Below is an example of the word cloud generated from the selected text
+### Below is an example of the word cloud generated from the selected text
 ![Word Cloud Example](./word_cloud.png)
